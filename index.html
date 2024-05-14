@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional approach slider</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+
+      <div class="header-top">
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item menu-item__current"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Museums</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Parks</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__bottom">
+
+        <div class="weather">
+          <div class="weather-icon">
+            <img src="./assets/icons/weather_icon/clouds.png" alt="weather-icon">
+          </div>
+          <p class="weather-temperature"></p>
+        </div>
+
+        <div class="title">
+          <h1 class="title-text">Zaporizhzhia</h1>
+          <div class="title-logo">
+            <img src="assets/icons/logo.jpg" alt="logo" class="title__logo-icon">
+          </div>
+        </div>
+
+        <div class="date-container">
+          <div class="number-month">
+            <span class="number">44 </span>
+            <span class="month">nhfdyz</span>
+          </div>
+          <div class="local-time">
+            <span class="hours"></span>
+            <span class="minutes"></span>
+            <span class="seconds"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div id="carousel" class="carousel">
+        <div id="slides-container" class="slides-container">
+          <div class="slide slide-current">
+            <p class="slide__text">Я люблю тебе, Запоріжжя!</p>
+            <div class="slide__img">
+              <img src="./assets/images/img01.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Особливо сяйво вночі.</p>
+            <div class="slide__img">
+              <img src="./assets/images/img02.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Коли йдеш по проспекту Соборному</p>
+            <div class="slide__img">
+              <img src="./assets/images/img03.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">А навколо тебе зірки ...</p>
+            <div class="slide__img">
+              <img src="./assets/images/img04.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Як на греблю подивишся в темряві</p>
+            <div class="slide__img">
+              <img src="./assets/images/img05.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">То згадаєш одраз козаків</p>
+            <div class="slide__img">
+              <img src="./assets/images/img06.avif" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Як долали пороги Дніпровськії</p>
+            <div class="slide__img">
+              <img src="./assets/images/img07.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">І на чайках ходили на ворогів</p>
+            <div class="slide__img">
+              <img src="./assets/images/img08.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Коли ж їду додому від мами</p>
+            <div class="slide__img">
+              <img src="./assets/images/img09.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">В свій задимлений Заводський район</p>
+            <div class="slide__img">
+              <img src="./assets/images/img10.jpeg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Обабіч доріг ліхтарики</p>
+            <div class="slide__img">
+              <img src="./assets/images/img11.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Обіцяють мені гарний сон</p>
+            <div class="slide__img">
+              <img src="./assets/images/img12.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Моє Запоріжжя різне...</p>
+            <div class="slide__img">
+              <img src="./assets/images/img13.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Вранці, вдень і вночі ...</p>
+            <div class="slide__img">
+              <img src="./assets/images/img14.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Я люблю тебе, рідне місто!</p>
+            <div class="slide__img">
+              <img src="./assets/images/img15.jpg" alt="01">
+            </div>
+          </div>
+          <div class="slide">
+            <p class="slide__text">Ти веселка в моїй душі!</p>
+            <div class="slide__img">
+              <img src="./assets/images/img16.jpg" alt="01">
+            </div>
+          </div>
+          <div id="controls-container" class="controls-container">
+            <div id="prev-btn" class="control control-prev"><img src="./assets/arrow_left.svg" alt="arrow-left"></div>
+            <div id="pausePlay-btn" class="control control-pause-play"><img src="./assets/pause.svg" alt="pause"></div>
+            <div id="next-btn" class="control control-next"><img src="./assets/arrow_right.svg" alt="arrow-right"></div>
+          </div>
+        </div>
+        <div id="indicators-container" class="indicators-container">
+          <div class="indicator indicator-current" data-slide-to="0"></div>
+          <div class="indicator" data-slide-to="1"></div>
+          <div class="indicator" data-slide-to="2"></div>
+          <div class="indicator" data-slide-to="3"></div>
+          <div class="indicator" data-slide-to="4"></div>
+          <div class="indicator" data-slide-to="5"></div>
+          <div class="indicator" data-slide-to="6"></div>
+          <div class="indicator" data-slide-to="7"></div>
+          <div class="indicator" data-slide-to="8"></div>
+          <div class="indicator" data-slide-to="9"></div>
+          <div class="indicator" data-slide-to="10"></div>
+          <div class="indicator" data-slide-to="11"></div>
+          <div class="indicator" data-slide-to="12"></div>
+          <div class="indicator" data-slide-to="13"></div>
+          <div class="indicator" data-slide-to="14"></div>
+          <div class="indicator" data-slide-to="15"></div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">&copy; Alina Scorpion</footer>
+
+  </div>
+  <script src="./js/weather.js"></script>
+  <script src="./js/local-time.js"></script>
+  <script src="./js/date.js"></script>
+  <script src="./js/main-slider.js"></script>
+</body>
+
+</html>
